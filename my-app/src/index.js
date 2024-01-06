@@ -10,7 +10,8 @@ root.render(
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet"></link>
     <div class="container">
       <Sidebar/>
-      <Analyse/>    
+      <Analyse/>
+      
     </div>
     
   </React.StrictMode>
