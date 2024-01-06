@@ -32,3 +32,12 @@ main .new-users .user-list:hover{
     
 }
 
+@media screen and (max-width: 768px) {
+    main .new-users .user-list .user{
+        flex-basis: 35%;
+    }
+}
+
+
+
+

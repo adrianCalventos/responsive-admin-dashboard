@@ -138,4 +138,9 @@ b{
         padding: 0 var(--padding-1);
     }
 
+    main{
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+
 }

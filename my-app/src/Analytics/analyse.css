@@ -82,6 +82,10 @@ main .analyse .progress .percentage{
 
 @media screen and (max-width: 1200px) {
 
+    main{
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
     main .analyse{
         grid-template-columns: 1fr;
         gap: 0;

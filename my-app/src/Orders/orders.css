@@ -50,3 +50,19 @@ main .recent-orders a{
         display: none;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    main .recent-orders{
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+    
+    main .recent-orders table{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+

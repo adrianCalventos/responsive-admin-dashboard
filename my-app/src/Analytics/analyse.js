@@ -5,15 +5,18 @@ import analyseItemsData from '../data/analyticsList.js'
 
 class Analyse extends React.Component {
     render() {
-      return <div class="analyse">
-                    {analyseItemsData.map((analyseItem) => (
-                        <AnalyseItem 
-                            className={analyseItem.className}
-                            title={analyseItem.title}
-                            number={analyseItem.number}
-                            percentage={analyseItem.percentage}/>
-                        ))}
-                </div>
+      return <div>
+                <h1>Analytics</h1>
+                <div class="analyse">
+                      {analyseItemsData.map((analyseItem) => (
+                          <AnalyseItem 
+                              className={analyseItem.className}
+                              title={analyseItem.title}
+                              number={analyseItem.number}
+                              percentage={analyseItem.percentage}/>
+                          ))}
+                  </div>
+              </div>
     }
   }
 
