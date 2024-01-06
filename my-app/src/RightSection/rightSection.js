@@ -1,5 +1,6 @@
 import React from 'react';
 import '../RightSection/rightSection.css';
+import Reminders from './Reminders/reminders';
 
 class RightSection extends React.Component {
     render() {
@@ -36,9 +37,7 @@ class RightSection extends React.Component {
                         <p>Fullstack developer</p>
                     </div>
                 </div>
-                <div class="reminders">
-
-                </div>
+                <Reminders/>
             </div>
     }
   }

@@ -98,3 +98,26 @@ aside .sidebar .message-count{
     border-radius: var(--border-radius-1);
 
 }
+
+@media screen and (max-width: 1200px) {
+    aside .sidebar{
+        height: 55vh;
+    }
+    aside .logo h2{
+        display: none;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a{
+        width:5.6rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+}
+

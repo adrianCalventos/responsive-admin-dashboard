@@ -20,3 +20,15 @@ main .new-users .user-list:hover{
     box-shadow: none;
 }
 
+@media screen and (max-width: 1200px) {
+    main .new-users .user-list .user{
+        flex-basis: 40%;
+    }
+
+    main .new-users .user-list .user{
+        flex-basis: 40%;
+    }
+
+    
+}
+

@@ -12,8 +12,8 @@ class Users extends React.Component {
                         <User 
                             imgUrl={usersItem.imgUrl}
                             name={usersItem.name}
-                            timeAgo={usersItem.timeAgo}/>
-                        ))}
+                            timeAgo={usersItem.timeAgo}/>                        
+                      ))}
                 </div>
               </div>
     }
