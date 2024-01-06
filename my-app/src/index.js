@@ -5,6 +5,8 @@ import Sidebar from './Sidebar/sidebar';
 import Analyse from './Analytics/analyse';
 import Users from './Users/users';
 import Orders from './Orders/orders';
+import RightSection from './RightSection/rightSection';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -16,6 +18,7 @@ root.render(
           <Users/>
           <Orders/>
       </main>
+      <RightSection/>
       
     </div>
     
