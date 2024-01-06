@@ -11,10 +11,18 @@ class RightSection extends React.Component {
         darkMode.querySelector('span:nth-child(2)').classList.toggle('active');
     };
 
+
+    showMenu(){
+        const sideMenu = document.querySelector('aside');
+        sideMenu.style.display = 'block';
+
+    }
+
+
     render() {
       return <div class="right-section">
                 <div class="nav">
-                    <button id="menu-btn">
+                    <button id="menu-btn" onClick={this.showMenu}>
                     <span class="material-icons-sharp">
                         menu
                     </span>

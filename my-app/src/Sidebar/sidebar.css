@@ -133,6 +133,9 @@ aside .sidebar .message-count{
         display: none;
         animation: showMenu 0.4s ease forwards;
     }
+    aside .sidebar{
+        height: 88vh;
+    }
 
     @keyframes showMenu {
         to{

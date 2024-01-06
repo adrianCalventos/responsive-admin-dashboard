@@ -2,6 +2,12 @@ import React from 'react';
 import './sidebar.css';
 
 class Sidebar extends React.Component {
+
+    closeButton(){
+        const sideMenu = document.querySelector('aside');
+        sideMenu.style.display = 'none';
+    }
+
     render() {
       return <aside>
                 <div class="toggle">
@@ -9,7 +15,7 @@ class Sidebar extends React.Component {
                         <img src="../../images/logo.png" alt="logo"/>
                         <h2>Adrian Calventos Garcia <span class="danger"> drianndemyx</span></h2>
                     </div>
-                    <div class="close" id="close-btn">
+                    <div class="close" id="close-btn" onClick={this.closeButton}>
                         <span class="material-icons-sharp">
                             close
                         </span>
