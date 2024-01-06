@@ -3,6 +3,14 @@ import '../RightSection/rightSection.css';
 import Reminders from './Reminders/reminders';
 
 class RightSection extends React.Component {
+
+    toggleDarkMode() {
+        document.body.classList.toggle('dark-mode-variables');
+        const darkMode = document.querySelector('.dark-mode');
+        darkMode.querySelector('span:nth-child(1)').classList.toggle('active');
+        darkMode.querySelector('span:nth-child(2)').classList.toggle('active');
+    };
+
     render() {
       return <div class="right-section">
                 <div class="nav">
@@ -11,7 +19,7 @@ class RightSection extends React.Component {
                         menu
                     </span>
                     </button>
-                    <div class="dark-mode">
+                    <div class="dark-mode"   onClick={this.toggleDarkMode}>
                         <span class="material-icons-sharp active">
                             light_mode
                         </span>
