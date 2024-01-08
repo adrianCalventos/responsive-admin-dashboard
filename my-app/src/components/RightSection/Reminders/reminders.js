@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Reminders/reminders.css';
-import reminderData from '../../data/reminderList';
+import reminderData from '../../../data/reminderList';
 import Reminder from './Reminder/reminder';
 
 class Reminders extends React.Component {

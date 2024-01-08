@@ -1,7 +1,7 @@
 import React from 'react';
 import './analyse.css';
 import AnalyseItem from './AnalyticItem/analyticitem.js';
-import analyseItemsData from '../data/analyticsList.js'
+import analyseItemsData from '../../data/analyticsList.js'
 
 class Analyse extends React.Component {
     render() {

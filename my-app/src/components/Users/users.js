@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Users/users.css';
-import userData from '../data/userList.js'
+import userData from '../../data/userList.js'
 import User from './User/user.js';
  
 class Users extends React.Component {

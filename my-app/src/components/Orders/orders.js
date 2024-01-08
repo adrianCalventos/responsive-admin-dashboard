@@ -1,6 +1,6 @@
 import React from 'react';
 import Order from './Order/order';
-import ordersData from '../data/orderList';
+import ordersData from '../../data/orderList';
 import '../Orders/orders.css';
 
 class Orders extends React.Component {

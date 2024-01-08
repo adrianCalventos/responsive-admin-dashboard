@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Sidebar from './Sidebar/sidebar';
-import Analyse from './Analytics/analyse';
-import Users from './Users/users';
-import Orders from './Orders/orders';
-import RightSection from './RightSection/rightSection';
+import Sidebar from './components/Sidebar/sidebar';
+import Analyse from './components/Analytics/analyse';
+import Users from './components/Users/users';
+import Orders from './components/Orders/orders';
+import RightSection from './components/RightSection/rightSection';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
