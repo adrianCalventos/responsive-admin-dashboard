@@ -1,6 +1,11 @@
 import React from 'react';
 import '../RightSection/rightSection.css';
 import Reminders from './Reminders/reminders';
+import IconButton from '@material-ui/core/IconButton';
+import {
+    IconFlagES,
+    IconFlagUK
+} from 'material-ui-flags';
 
 class RightSection extends React.Component {
 
@@ -34,17 +39,26 @@ class RightSection extends React.Component {
                         <span class="material-icons-sharp">
                             dark_mode
                         </span>
-                    </div>  
+                    </div> 
+                    <div class="lang-icons"   onClick={this.toggleDarkMode}>
+                        <span>
+                            <IconButton><IconFlagES /></IconButton>
+                        </span>
+                        <span>
+                            <IconButton><IconFlagUK /></IconButton>
+                        </span>
+                    </div> 
                     <div class="profile">
                         <div class="info">
                             <p>Hey, <b>Reza</b></p>
                             <small class="text-muted">Admin</small>
                         </div>
                         <div class="profile-photo">
-                            <img src="images/profile-1.jpg"/>
+                            <img src="images/profile-1.jpg" alt="profile-1"/>
                         </div>
                     </div>                
                 </div>
+
                 {/*End of nav*/}
                 <div class="user-profile">
                     <div class="logo">
