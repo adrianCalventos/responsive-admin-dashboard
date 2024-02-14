@@ -2,10 +2,18 @@ import React from 'react';
 import '../RightSection/rightSection.css';
 import Reminders from './Reminders/reminders';
 import IconButton from '@material-ui/core/IconButton';
+import ReactCountryFlag from "react-country-flag"
+import {useTranslation} from "react-i18next";
 
-class RightSection extends React.Component {
+//class RightSection extends React.Component {
+const RightSection = () => {
+    const [t, i18n] = useTranslation("global");
 
-    toggleDarkMode() {
+    let handleChangeLanguage = (lang) =>{
+        console.log(lang)
+        i18n.changeLanguage(lang);
+    }
+    let toggleDarkMode =() => {
         document.body.classList.toggle('dark-mode-variables');
         const darkMode = document.querySelector('.dark-mode');
         darkMode.querySelector('span:nth-child(1)').classList.toggle('active');
@@ -13,22 +21,31 @@ class RightSection extends React.Component {
     };
 
 
-    showMenu(){
+    let showMenu = () =>{ 
         const sideMenu = document.querySelector('aside');
         sideMenu.style.display = 'block';
 
     }
 
 
-    render() {
+    //render() {
       return <div class="right-section">
                 <div class="nav">
-                    <button id="menu-btn" onClick={this.showMenu}>
+                    <button id="menu-btn" onClick={showMenu}>
                     <span class="material-icons-sharp">
                         menu
                     </span>
                     </button>
-                    <div class="dark-mode"   onClick={this.toggleDarkMode}>
+
+                    <div class="dark-mode">
+                        <span >
+                            <ReactCountryFlag countryCode="US" onClick={()=>handleChangeLanguage("en")} />
+                        </span>
+                        <span>
+                            <ReactCountryFlag countryCode="ES"  onClick={()=>handleChangeLanguage("es")}/>
+                        </span>
+                    </div> 
+                    <div class="dark-mode"   onClick={toggleDarkMode}>
                         <span class="material-icons-sharp active">
                             light_mode
                         </span>
@@ -57,7 +74,7 @@ class RightSection extends React.Component {
                 </div>
                 <Reminders/>
             </div>
-    }
+ //   }
   }
 
 export default RightSection;

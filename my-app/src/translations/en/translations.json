@@ -1,5 +1,8 @@
 {
     "analytics":{
         "title": "Analytics"
+    },
+    "users":{
+        "title":"New Users"
     }
 }
