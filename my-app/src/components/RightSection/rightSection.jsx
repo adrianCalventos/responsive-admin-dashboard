@@ -14,8 +14,7 @@ const RightSection = () => {
         if(i18n.language ==="es"){
             i18n.changeLanguage("en");
             langicons.querySelector('span:nth-child(1)').classList.toggle('active');
-        }
-            
+        }          
         else{
             i18n.changeLanguage("es");
             langicons.querySelector('span:nth-child(1)').classList.toggle('active');

@@ -1,10 +1,20 @@
 {
-    "analytics":{
-        "title": "Analiticas"
-    },"users":{
-        "title":"Nuevos Usuarios"
+    "analytics": {
+        "title": "Analíticas"
     },
-    "order":{
-        "title":" Pedidos recientes"
+    "users": {
+        "title": "Nuevos Usuarios"
+    },
+    "orders": {
+        "title": "Pedidos Recientes"
+    },
+    "reminders": {
+        "title": "Recordatorios"
+    },
+    "sideboard": {
+        "dashboard": "Tablero",
+        "users": "Usuarios",
+        "history": "Historial",
+        "analitycs": "Analíticas"
     }
 }

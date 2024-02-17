@@ -1,21 +1,22 @@
 import React from 'react';
 import './sidebar.css';
+import { useTranslation} from 'react-i18next';
 
-class Sidebar extends React.Component {
+const Sidebar = () =>{
+    const [t, i18n] = useTranslation("global")
 
-    closeButton(){
+    let closeButton =()=>{
         const sideMenu = document.querySelector('aside');
         sideMenu.style.display = 'none';
     }
 
-    render() {
       return <aside>
                 <div class="toggle">
                     <div class="logo">
                         <img src="../../images/logo.png" alt="logo"/>
                         <h2>Adrian Calventos Garcia <span class="danger"> drianndemyx</span></h2>
                     </div>
-                    <div class="close" id="close-btn" onClick={this.closeButton}>
+                    <div class="close" id="close-btn" onClick={closeButton}>
                         <span class="material-icons-sharp">
                             close
                         </span>
@@ -26,25 +27,25 @@ class Sidebar extends React.Component {
                                 <span class="material-icons-sharp">
                                     dashboard
                                 </span>  
-                                <h3>Dashboard</h3>
+                                <h3>{t("sideboard.dashboard")}</h3>
                             </a>
                             <a href="#">
                                 <span class="material-icons-sharp">
                                     person_outline
                                 </span>  
-                                <h3>Users</h3>
+                                <h3>{t("sideboard.users")}</h3>
                             </a>
                             <a href="#">
                                 <span class="material-icons-sharp">
                                     receipt_long
                                 </span>  
-                                <h3>History</h3>
+                                <h3>{t("sideboard.history")}</h3>
                             </a>
                             <a href="#" class="active">
                                 <span class="material-icons-sharp">
                                     insights
                                 </span>  
-                                <h3>Analitycs</h3>
+                                <h3>{t("sideboard.analitycs")}</h3>
                             </a>  
                             <a href="#">
                                 <span class="material-icons-sharp">
@@ -85,7 +86,6 @@ class Sidebar extends React.Component {
                             </a>  
                     </div>
             </aside>
-    }
-  }
+}
 
 export default Sidebar;

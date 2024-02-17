@@ -2,11 +2,13 @@ import React from 'react';
 import Order from './Order/order';
 import ordersData from '../../data/orderList';
 import '../Orders/orders.css';
+import { useTranslation} from 'react-i18next';
 
-class Orders extends React.Component {
-    render() {
+const Orders = ()=>{
+    const [t, i18n] = useTranslation("global")
+
       return  <div class="recent-orders">
-                <h2>Recent Orders</h2>
+                <h2>{t("orders.title")}</h2>
                 <table>
                     <thead>
                         <tr>
@@ -30,7 +32,6 @@ class Orders extends React.Component {
                 </table>
                 <a href="#">Show All</a>
               </div>
-    }
   }
 
 export default Orders;

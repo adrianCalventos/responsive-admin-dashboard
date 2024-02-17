@@ -4,5 +4,17 @@
     },
     "users":{
         "title":"New Users"
+    },
+    "orders":{
+        "title":" Recent Orders"
+    },
+    "reminders":{
+        "title": "Reminders"
+    },
+    "sideboard":{
+        "dashboard": "Dashboard",
+        "users": "Users",
+        "history": "History",
+        "analitycs": "Analytics"
     }
 }

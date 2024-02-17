@@ -3,8 +3,7 @@ import '../Reminders/reminders.css';
 import reminderData from '../../../data/reminderList';
 import Reminder from './Reminder/reminder';
 
-class Reminders extends React.Component {
-    render() {
+const Reminders = () =>{
       return <div class="reminders">
                 <div class="header">
                     <h2>Reminders</h2>
@@ -27,7 +26,6 @@ class Reminders extends React.Component {
                 </div>
 
             </div>
-    }
 }
 
 export default Reminders;

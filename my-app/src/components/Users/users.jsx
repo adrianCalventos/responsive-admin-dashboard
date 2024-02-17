@@ -4,8 +4,6 @@ import userData from '../../data/userList.js'
 import User from './User/user.js';
 import { useTranslation} from 'react-i18next';
 
-// class Users extends React.Component {
-//     render() {
 const Users = () => {
   const [t, i18n] = useTranslation("global")
 
