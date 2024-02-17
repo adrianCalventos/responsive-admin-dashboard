@@ -5,13 +5,22 @@ import IconButton from '@material-ui/core/IconButton';
 import ReactCountryFlag from "react-country-flag"
 import {useTranslation} from "react-i18next";
 
-//class RightSection extends React.Component {
 const RightSection = () => {
     const [t, i18n] = useTranslation("global");
 
-    let handleChangeLanguage = (lang) =>{
-        console.log(lang)
-        i18n.changeLanguage(lang);
+    let handleChangeLanguage = () =>{
+        const langicons = document.querySelector('.lang-icons');
+
+        if(i18n.language ==="es"){
+            i18n.changeLanguage("en");
+            langicons.querySelector('span:nth-child(1)').classList.toggle('active');
+        }
+            
+        else{
+            i18n.changeLanguage("es");
+            langicons.querySelector('span:nth-child(1)').classList.toggle('active');
+
+        }
     }
     let toggleDarkMode =() => {
         document.body.classList.toggle('dark-mode-variables');
@@ -27,8 +36,6 @@ const RightSection = () => {
 
     }
 
-
-    //render() {
       return <div class="right-section">
                 <div class="nav">
                     <button id="menu-btn" onClick={showMenu}>
@@ -37,12 +44,12 @@ const RightSection = () => {
                     </span>
                     </button>
 
-                    <div class="dark-mode">
-                        <span >
-                            <ReactCountryFlag countryCode="US" onClick={()=>handleChangeLanguage("en")} />
+                    <div class="lang-icons" onClick={()=>handleChangeLanguage()}>
+                        <span class="active">
+                            <ReactCountryFlag class="us-icon" countryCode="US" />
                         </span>
                         <span>
-                            <ReactCountryFlag countryCode="ES"  onClick={()=>handleChangeLanguage("es")}/>
+                        <   ReactCountryFlag  class="es-icon" countryCode="ES"/>
                         </span>
                     </div> 
                     <div class="dark-mode"   onClick={toggleDarkMode}>
@@ -74,7 +81,6 @@ const RightSection = () => {
                 </div>
                 <Reminders/>
             </div>
- //   }
   }
 
 export default RightSection;

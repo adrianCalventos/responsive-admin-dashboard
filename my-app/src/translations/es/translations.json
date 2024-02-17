@@ -3,5 +3,8 @@
         "title": "Analiticas"
     },"users":{
         "title":"Nuevos Usuarios"
+    },
+    "order":{
+        "title":" Pedidos recientes"
     }
 }
