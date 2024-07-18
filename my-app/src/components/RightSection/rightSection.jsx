@@ -4,6 +4,7 @@ import Reminders from './Reminders/reminders';
 import IconButton from '@material-ui/core/IconButton';
 import ReactCountryFlag from "react-country-flag"
 import {useTranslation} from "react-i18next";
+import Dropdown from 'react-dropdown';
 
 const RightSection = () => {
     const [t, i18n] = useTranslation("global");
@@ -42,7 +43,10 @@ const RightSection = () => {
                         menu
                     </span>
                     </button>
-
+                    <div>
+                        
+                        <Dropdown onChange={handleChangeLanguage} placeholder="Select an option" options={i18n.languages}/>
+                    </div>
                     <div class="lang-icons" onClick={()=>handleChangeLanguage()}>
                         <span class="active">
                             <ReactCountryFlag class="us-icon" countryCode="US" />

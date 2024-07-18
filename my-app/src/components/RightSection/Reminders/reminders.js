@@ -24,7 +24,6 @@ const Reminders = () =>{
                         <h3>Add Reminder</h3>
                     </div>
                 </div>
-
             </div>
 }
 
